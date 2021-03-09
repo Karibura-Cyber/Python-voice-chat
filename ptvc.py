@@ -56,7 +56,7 @@ class Client:
 #server class
 class Server:
     def __init__(self):
-           self.ip = '127.0.0.1' #You can Change Host IP  
+            self.ip = '127.0.0.1' #You can Change Host IP  
             while 1:
                 try:
                     self.port = int(input('Enter port number to run on --> '))
