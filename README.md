@@ -8,7 +8,7 @@ How to usage:<br>
 <hr>
 
 If you can't install Pyaudio you can follow me step by step <br>
-<code>pip install pipwin</code>
+<code>pip install pipwin</code><br>
 <code>pipwin install pyaudio</code>
 <hr>
 
