@@ -56,13 +56,13 @@ class Client:
 #server class
 class Server:
     def __init__(self):
-            self.ip = float(input('Server IP: '))
+            hostip = float(input('Server IP: '))
             while 1:
                 try:
                     self.port = int(input('Enter port number to run on --> '))
 
                     self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                    self.s.bind((self.ip, self.port))
+                    self.s.bind((hostip, self.port))
 
                     break
                 except:
