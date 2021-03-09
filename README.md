@@ -8,8 +8,14 @@ How to usage:<br>
 <hr>
 
 If you can't install Pyaudio you can follow me step by step <br>
+### windows 
+
 <code>pip install pipwin</code><br>
 <code>pipwin install pyaudio</code>
+
+### linux
+
+<code>sudo apt-get install python3-pyaudio -y</code>
 <hr>
 
 # Screenshot
