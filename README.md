@@ -6,4 +6,7 @@ How to usage:<br>
 <code>pip install -r requirements.txt</code><br>
 <code>python ptvc.py</code>
 
+# Screenshot
+<img src='https://github.com/Karibura-Cyber/Python-voice-chat/raw/main/sda.png'>
+
 
