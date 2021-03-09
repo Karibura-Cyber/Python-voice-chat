@@ -122,7 +122,7 @@ def call():
     elif i == 2:
         client = Client()
     elif i == 3:
-        print('See you Again')
+        exit()
     else:
         print('please Enter a number')
     
