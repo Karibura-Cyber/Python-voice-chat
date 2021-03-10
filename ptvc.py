@@ -1,7 +1,7 @@
 import socket
 import threading
 import pyaudio
-
+import os
 
 #client class
 class Client:
@@ -10,8 +10,8 @@ class Client:
         
         while 1:
             try:
-                self.target_ip = input('Enter IP address of server --> ')
-                self.target_port = int(input('Enter target port of server --> '))
+                self.target_ip = input('Enter IP address of server : ')
+                self.target_port = int(input('Enter target port of server : '))
 
                 self.s.connect((self.target_ip, self.target_port))
 
@@ -59,7 +59,7 @@ class Server:
             self.ip = '127.0.0.1' #You can Change Host IP  
             while 1:
                 try:
-                    self.port = int(input('Enter port number to run on --> '))
+                    self.port = int(input('Enter port number to run on : '))
 
                     self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                     self.s.bind((self.ip, self.port))
@@ -102,9 +102,14 @@ class Server:
                 c.close()
 #end server class
 
+def cmd():
+    os.system('cls')
+    os.system('color a')
+    os.system('title PTVC')
 #function call statement
 
 def call():
+    cmd()
     print('_________________________   _____________')
     print('\______   \__    ___/\   \ /   /\_   ___ \ ')
     print(' |     ___/ |    |    \   Y   / /    \  \/')
@@ -114,7 +119,7 @@ def call():
     print('')
     print('Python Voice Chat Develop By Karibura')
     print('')
-    print('Server side [1]\nClient side [2]\nExit [3]\n')
+    print('1.Server side\n2.Client side\n3.Exit\n')
     i = int(input("Enter Number: "))
     print('\n')
     if i == 1:
