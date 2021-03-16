@@ -8,12 +8,12 @@ How to usage:<br>
 <hr>
 
 <h2>If you can't install Pyaudio you can follow me step by step</h2> <br>
-### windows 
+###windows 
 
 <code>pip install pipwin</code><br>
 <code>pipwin install pyaudio</code>
 
-### linux
+###linux
 
 <code>sudo apt-get install python3-pyaudio -y</code>
 <hr>
